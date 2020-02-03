@@ -1,0 +1,44 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "juego",
+      "precio": "11123"
+    },
+    {
+      "id": 1,
+      "nombre": "jarron",
+      "precio": "651"
+    },
+    {
+      "id": 3,
+      "nombre": "jugo",
+      "precio": "222"
+    },
+    {
+      "nombre": "besitos de carli",
+      "precio": 1000,
+      "id": 4
+    },
+    {
+      "nombre": "ozuna ",
+      "precio": 299,
+      "id": 5
+    },
+    {
+      "nombre": "Metallica",
+      "precio": 0,
+      "id": 6
+    },
+    {
+      "nombre": "Metallica",
+      "precio": 0,
+      "id": 7
+    },
+    {
+      "nombre": "Metallica",
+      "precio": 2,
+      "id": 8
+    }
+  ]
+}

@@ -1,11 +1,25 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 
 
 const Productos = () =>
 {
     return(
 
-        <h1>Return desde Productos</h1>
+        <Fragment>
+            <h2 className="text-center my-5">Listado de productos </h2>
+            <table className="table table-striped">
+                <thead className="bg-secondary table-dark">
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Acciones </th>
+                        </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </Fragment>
     );
 
 

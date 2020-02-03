@@ -5,25 +5,30 @@ import NuevoProducto from './components/NuevoProducto';
 import EditarProducto from './components/EditarProducto';
 
 
-import "bootswatch/dist/minty/bootstrap.min.css"; 
-
 import {BrowserRouter ,Route,Switch} from 'react-router-dom';
+
+//redux
+import { Provider} from 'react-redux';
+import store from './store';
 
 function App() {
   return (
    
     <BrowserRouter>
-       <Header/>
-       
-          <div className="container mt-5">
-                <Switch>
-                
-                  <Route exact path="/" component={Productos}/>
-                  <Route exact path="/productos/nuevos" component={NuevoProducto}/>
-                  <Route exact path="/productos/editar/:id" component={EditarProducto}/>
-                </Switch>
-          </div>
-        
+
+      <Provider store={store} >
+           
+            <Header/>
+            
+                <div className="container mt-5">
+                      <Switch>
+                      
+                        <Route exact path="/" component={Productos}/>
+                        <Route exact path="/productos/nuevos" component={NuevoProducto}/>
+                        <Route exact path="/productos/editar/:id" component={EditarProducto}/>
+                      </Switch>
+                </div>
+        </Provider>
     </BrowserRouter>
    
   );
